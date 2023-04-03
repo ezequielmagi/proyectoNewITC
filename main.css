@@ -82,6 +82,10 @@ main article figure p{
     left: 1rem;
 }
 
+.blog{
+    height: 30vh;
+}
+
 .shadow{
     background-color: rgba(3, 3, 3, 0.5);
     bottom: 0;
@@ -91,6 +95,7 @@ main article figure p{
     z-index: 1;
     grid-row-start: 3;
     left: 8px;
+    bottom: 0px;
     filter: blur(5px);
 }
 
@@ -98,9 +103,9 @@ footer{
     background: #333;
     height: 20vh;
     width: 100vw;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
 }
 
 footer h2{
@@ -127,3 +132,4 @@ footer button{
     font-size: 1.2rem;
     cursor: pointer;
 }
+

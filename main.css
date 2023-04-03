@@ -5,7 +5,9 @@
 }
 
 body{
+    font-family: 'Roboto', sans-serif;
     width: 100%;
+
 }
 
 header{
@@ -36,4 +38,92 @@ header figure{
     margin-bottom: 3px;
     margin-left: 5px;
     width: 15px;
+}
+
+main{
+    height: 60vh;
+    margin: 0 auto;
+    width: 90%;
+}
+
+main h1{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+main article{
+    height: 70vh;
+}
+
+main article figure{
+    height: 214px;
+    width: 100%;
+    border-radius: 15px;
+    background-image: url(./assets/img/portadaDGP.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+main article figure p{
+    color: #fafafa;
+    font-size: 1.5rem;
+    font-weight: 700;
+    grid-row-start: 3;
+    z-index: 10;
+    width: 80%;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.shadow{
+    background-color: rgba(3, 3, 3, 0.5);
+    bottom: 0;
+    height: 80px;
+    width: calc(100% - 1rem);
+    position: absolute;
+    z-index: 1;
+    grid-row-start: 3;
+    left: 8px;
+    filter: blur(5px);
+}
+
+footer{
+    background: #333;
+    height: 20vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+footer h2{
+    color: #fafafa;
+    text-align: center;
+    top: 1rem;
+    left: 20%;
+    position: absolute;
+}
+
+footer button{
+    height: 40px;
+    width: 250px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 1rem;
+    left: 15%;
+    z-index: 10;
+    border: none;
+    border-radius: 15px;
+    background: #65dd8d;
+    color: #fafafa;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
 }

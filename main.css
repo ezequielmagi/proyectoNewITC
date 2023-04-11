@@ -101,17 +101,21 @@ main article figure p{
 
 footer{
     background: #333;
-    height: 20vh;
+    height: 30vh;
     width: 100vw;
     position: fixed;
     left: 0px;
     bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer h2{
     color: #fafafa;
     text-align: center;
-    top: 1rem;
+    top: 2.5rem;
     left: 20%;
     position: absolute;
 }
@@ -121,7 +125,7 @@ footer button{
     width: 250px;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 1rem;
+    bottom: 3.5rem;
     left: 15%;
     z-index: 10;
     border: none;
@@ -133,3 +137,115 @@ footer button{
     cursor: pointer;
 }
 
+form{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form label{
+    font-size: 1.2rem;
+    color: steelblue;
+}
+
+form input{
+    border-radius: 5px;
+    outline: navajowhite;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+form button{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background: steelblue;
+    color: #fafafa;
+}
+
+form button:active{
+    transform: scale(0.9);
+}
+
+@media (min-width: 1024px) {
+
+    .mobile{
+        display: none;
+    }
+
+    main article {
+        width: 950px;
+    }
+
+    main article figure{
+        width: 400px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 20vh;
+    }
+
+    footer h2{
+        position: relative;
+        grid-column-start: 2;
+        grid-row-start: 1;
+        left: 0;
+        top: 0;
+    }
+    
+    footer button{
+        grid-column-start: 2;
+        left: 15%;
+        bottom: 0;
+        grid-row-start: 2;
+        position: relative;
+    }
+}
+@media (min-width: 1440px) {
+
+    .mobile{
+        display: none;
+    }
+
+    main article{
+        margin: 0 auto;
+        width: 950px;
+    }
+
+    main article a{
+        width: 500px;
+    }
+
+    main article figure{
+        width: 400px;
+        height: 250px;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 20vh;
+    }
+
+    footer h2{
+        position: relative;
+        grid-column-start: 2;
+        grid-row-start: 1;
+        left: 0;
+        top: 0;
+    }
+    
+    footer button{
+        grid-column-start: 2;
+        left: 25%;
+        bottom: 0;
+        grid-row-start: 2;
+        position: relative;
+    }
+}

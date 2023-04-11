@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarga tu material didactico!</title>
+</head>
+<body>
+    <body>
+        <header>
+            <a href="./index.html">
+                <figure></figure>
+            </a>
+            <nav>
+                <div class="mobile">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </header>
+        <main id="home">
+            <article>
+                <h1>¡Descarga el material de prácticas y comienza a aprender!</h1>
+                <!-- <p>Lo último en Diseño Gráfico Publicitario</p> -->
+                <form>
+                    <label for="code">Ingresa el código que figura en tu llave de acceso (son 8 números):</label>
+                    <input type="text" name="code" id="userResponse">
+                    <button type="button" id="send" onclick="descargaShit()">Enviar</input>
+                </form>
+            </article>
+            <section class="blog">
+    
+            </section>
+            <!-- <article>
+                <h2>También puede interesarte...</h2>
+                <div class="carrusel">
+    
+                </div>
+            </article> -->
+            <footer>
+                <h2>¿Necesitas ayuda?</h2>
+                <button onclick="window.location.href='https://wa.me/5491164240205?text=Hola! Soy alumno y necesito asistencia. Mis datos son: '">Asistencia al Alumno</button>
+                <!-- logo de whatsapp (asistencia al alumno)
+                logo facebook (redes)
+                logo instagram (redes) -->
+            </footer>
+        </main>
+    
+        <!-- seccion de preguntas frecuentes -->
+    
+        <!-- <section id="faqs">
+            <article>
+                <h2>Preguntas Frecuentes</h2>
+                <article>¿lorem ipsum lorem impsum?</article>
+                <article>¿lorem ipsum lorem impsum?</article>
+                <article>¿lorem ipsum lorem impsum?</article>
+                <article>¿lorem ipsum lorem impsum?</article>
+                <article>¿lorem ipsum lorem impsum?</article>
+            </article>
+            <article>
+                <h2>¿Tienes más preguntas?</h2>
+                <button><a href="#contact">Contáctanos</a></button>
+                <figure></figure>
+            </article>
+    
+        </section>
+    
+        <!-- content section -->
+    <!--
+        <section id="content">
+            <h2>Descubrí el mejor contenido que seleccionamos para vos.</h2>
+    
+            <article>
+                <h2>Marketing y Publicidad Digital</h2>
+                <div class="content-carrousel">
+                    <figure></figure>
+                    <figure></figure>
+                </div>
+            </article>
+            <article>
+                <h2>Administración de Pymes</h2>
+                <div class="content-carrousel">
+                    <figure></figure>
+                    <figure></figure>
+                </div>
+            </article>
+            <article>
+                <h2>Secretariado Ejecutivo</h2>
+                <div class="content-carrousel">
+                    <figure></figure>
+                    <figure></figure>
+                </div>
+            </article>
+            <article>
+                <h2>Desarrollo WEB</h2>
+                <div class="content-carrousel">
+                    <figure></figure>
+                    <figure></figure>
+                </div>
+            </article>
+    
+        </section>
+    -->
+        <!-- Contact section -->
+    <!--
+        <section id="contact">
+            <article>
+                <h2>Formalario de contacto</h2>
+                <p>Por favor rellene todos los campos y dejenos su mensaje.</p>
+            </article>
+            <form>
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+                <input type="email" placeholder="Correo Electrónico">
+                <input type="text" placeholder="Capacitación">
+                <input type="text" placeholder="Localidad">
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Déjenos su mensaje..."></textarea>
+            </form>
+            <article>
+                <h2>También puede interesarte...</h2>
+                <div class="contact-carrousel"></div>
+            </article>
+        </section>
+    
+    -->
+
+ 
+    
+ <script>
+    function descargaShit() { 
+        const resp = document.getElementById('userResponse').value
+        
+        if(resp === "69582410"){
+            window.open('./assets/practicas_dti1_69582410.zip')
+            console.log("se deberia descargar")
+        }else{
+            alert('el codigo ingresado no es correcto. Vuelve a intentarlo por favor o contacta a Asistencia al Alumno')
+        }
+     }
+ </script>
+
+
+    
+    </body>
+</body>
+</html>
